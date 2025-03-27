@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <title>Weezer Clicker</title>
+</head>
+<body style="background-image: url(static/images/weezerblue.png);">
+    <div style="align-items: center; margin: auto;">
+        <h1>Weezer Clicker</h1>
+
+        <button class="weezerbtn" onclick="addclick()" onmousedown="pictureChange()" onmouseup="pictureRevert()">
+            <img id="theImage" src="static/images/rivers.png" alt="" style="width:200px;height:200px;cursor: pointer;">
+        </button>
+        <p style="text-align: center;" id="timesclicked">0</p>
+        <script>
+            function pictureChange()
+            {
+                  document.getElementById("theImage").src="static/images/riversScream.png";
+            }
+            function pictureRevert(){
+                document.getElementById("theImage").src="static/images/rivers.png"
+            }
+        </script>
+    </div>
+
+</body>
